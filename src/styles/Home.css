@@ -1,0 +1,351 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #103e56;
+  color: #ffffff;
+  line-height: 1.6; /* Added for better text readability */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #092635;
+  color: white;
+  padding: 50px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3); /* Added subtle shadow for depth */
+}
+
+.logo {
+  font-size: 34px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-links li:hover {
+  color: #9EC8B9;
+  transform: translateY(-3px); /* Slight hover effect for interaction */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #1B4242;
+  min-width: 150px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #9EC8B9;
+}
+
+.dropdown-content a:hover {
+  background: #32d583;
+  color: #1a2e3b;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5); /* Adds a darker overlay for text visibility */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #9ec8b9;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #9ec8b9;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #5c8374;
+  margin-top: 10px;
+}
+
+.get-started-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a2e3b;
+  background-color: #32d583;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 15px rgba(50, 213, 131, 0.4);
+}
+
+.get-started-btn:hover {
+  box-shadow: 0px 0px 25px rgba(50, 213, 131, 1);
+}
+
+.get-started-btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* New focus state for accessibility */
+}
+
+
+/* Features Section */
+.feature-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.features-title {
+  font-size: 2.5rem;
+  color: #9EC8B9;
+  margin-bottom: 10px;
+}
+
+.feature-section p {
+  font-size: 1.2rem;
+  color: #b0c4d1;
+}
+
+/* Video Section */
+.videos-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.video {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid #32d583;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+}
+
+.video:hover {
+  transform: translateY(-15px);
+  border-color: #9EC8B9;
+  box-shadow: 0 8px 20px rgba(50, 213, 131, 0.6);
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Algorithms Section */
+.home-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #9EC8B9;
+  margin: 50px 0;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+/* Algorithm Cards */
+.category-card {
+  background: #1B4242;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.category-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 8px 30px rgba(50, 213, 131, 0.5);
+}
+
+.category-card h3 {
+  font-size: 1.5rem;
+  color: #9EC8B9;
+  margin: 10px 0;
+}
+
+.category-card p {
+  font-size: 1rem;
+  color: #b0c4d1;
+  margin-bottom: 15px;
+}
+
+.category-card .icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #314e5e;
+  border-radius: 10px;
+}
+
+.hash-table-icon {
+  background-image: url("/src/assets/icons/HT.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sorting-icon {
+  background-image: url("/src/assets/icons/SA.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.trees-icon {
+  background-image: url("/src/assets/icons/TR.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.linked-lists-icon {
+  background-image: url("/src/assets/icons/LL.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #1a2e3b;
+  background-color: #32d583;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  box-shadow: 0px 0px 15px rgba(50, 213, 131, 0.7);
+}
+
+.explore-btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Focus state for accessibility */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 60px 20px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .get-started-btn {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .get-started-btn {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+  .features-title, .home-title {
+    font-size: 2rem;
+  }
+  .category-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 50px 15px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .get-started-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .features-title, .home-title {
+    font-size: 1.8rem;
+  }
+}
+

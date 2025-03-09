@@ -1,0 +1,40 @@
+/* Dynamic Header */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #092635;
+    color: #9EC8B9;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.4s ease-in-out;
+    z-index: 1000;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+.navbar.visible {
+    transform: translateY(0);
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-links li:hover {
+    color: #5C8374;
+}

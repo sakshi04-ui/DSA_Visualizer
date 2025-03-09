@@ -1,0 +1,180 @@
+/* General Layout */
+.sorting-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    background-color: #1B4242;
+    color: #9EC8B9;
+    border-radius: 8px;
+    width: 90%;
+    margin: 80px;
+    height: 90vh;
+    overflow-y: hidden;
+    position: relative;
+    top: 30px;
+}
+
+/* Sections (Algorithm, Code, Visualization) */
+.section {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #092635;
+    margin: 10px;
+    overflow-y: auto;
+    max-height: 85vh;
+    scrollbar-width: thin;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+/* Dropdown Styling */
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #1B4242;
+    color: #9EC8B9;
+    border: 1px solid #5C8374;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+select:hover {
+    background-color: #5C8374;
+    color: #092635;
+}
+
+select option {
+    background-color: #092635;
+    color: #9EC8B9;
+}
+
+/* Inputs and Buttons */
+input, button {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 90%;
+    margin-top: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+input {
+    background-color: #1B4242;
+    color: white;
+    border: 1px solid #5C8374;
+    outline: none;
+    text-align: center;
+}
+
+button {
+    background-color: #5C8374;
+    color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #9EC8B9;
+    color: #092635;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #5C8374;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Code Section */
+.code-section pre {
+    background-color: #1B4242;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+    color: #9EC8B9;
+    max-height: 250px;
+    scrollbar-width: thin;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+.code-section pre:hover {
+    background-color: #5C8374;
+}
+
+/* Execution Steps Box */
+.execution-box {
+    background-color: #1B4242;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: 200px;
+    text-align: left;
+    color: #9EC8B9;
+    scrollbar-width: thin;
+    transition: transform 0.3s ease-in-out;
+}
+
+.execution-box:hover {
+    transform: scale(1.02);
+}
+
+/* Array Visualization */
+.array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 250px;
+    margin-top: 20px;
+    overflow-x: auto;
+    background: rgba(155, 200, 185, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Sorting Bar Style */
+.array-bar {
+    width: 30px;
+    background-color: #5C8374;
+    color: white;
+    border-radius: 4px;
+    margin: 2px;
+    transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.2s;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.array-bar.active {
+    background-color: red;
+    transform: scale(1.1);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5C8374;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9EC8B9;
+}

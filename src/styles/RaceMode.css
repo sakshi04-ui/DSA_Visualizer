@@ -1,0 +1,111 @@
+.race-mode-container {
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .selection-panel button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: #ffcc00;
+  }
+  
+  .start-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .visualization {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .algorithm-panel {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    background: #4caf50;
+    border-radius: 10px;
+  }
+  
+  .array-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .array-item {
+    width: 30px;
+    height: 30px;
+    background: lightblue;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .compare {
+    background: red;
+  }
+  
+  .sorted {
+    background: limegreen;
+  }
+  .array-bar {
+    display: inline-block;
+    width: 20px;
+    margin: 2px;
+    background-color: lightblue;
+    transition: 0.3s;
+  }
+  
+  .comparing {
+    background-color: red; /* 🔥 Show comparisons */
+  }
+  
+  .sorted {
+    background-color: green; /* ✅ Mark sorted elements */
+  }
+  .leaderboard {
+    margin-top: 20px;
+    padding: 10px;
+    background: #1B4242;
+    color: #9EC8B9;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .leaderboard h2 {
+    margin-bottom: 10px;
+  }
+  
+  .leaderboard ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .leaderboard li {
+    font-size: 18px;
+    padding: 5px 0;
+  }
+    

@@ -1,0 +1,304 @@
+/* GENERAL CONTAINER */
+.searching-container {
+    margin-top: 90px;
+    padding: 10px;
+    text-align: center;
+    color: #9EC8B9;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Centered Title */
+.searching-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* FLEXIBLE LAYOUT WITH SECTIONS */
+.visualizer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: calc(100vh - 50px);
+    width: 100%;
+    gap: 10px;
+}
+
+/* ADDING A VERTICAL DIVIDER */
+.divider {
+    width: 5px;
+    background-color: #5C8374;
+    cursor: ew-resize;
+    transition: background-color 0.2s ease-in-out;
+    margin: 0 -2.5px;
+}
+
+.divider:hover {
+    background-color: #9EC8B9;
+}
+
+/* THEORY SECTION */
+.theory-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #1B4242;
+    color: #E0F8F5;
+    border: 2px solid #9EC8B9;
+    text-align: justify;
+    text-justify: inter-word;
+    overflow: auto;
+    border-radius: 8px;
+}
+
+/* Theory Section Content */
+.theory-section h3 {
+    color: #9EC8B9;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.theory-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.theory-section ol,
+.theory-section ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.theory-section li {
+    margin-bottom: 5px;
+}
+
+/* CODE EXECUTION SECTION */
+.code-execution {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #1B4242;
+    color: #E0F8F5;
+    border: 2px solid #9EC8B9;
+    overflow: auto;
+    border-radius: 8px;
+}
+
+/* Step-by-Step Execution */
+.execution-box {
+    border: 2px solid #9EC8B9;
+    padding: 15px;
+    height: 180px;
+    overflow-y: auto;
+    background-color: #1B4242;
+    color: #E0F8F5;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Highlight Active Execution Line */
+.execution-box p {
+    display: flex;
+    align-items: center;
+}
+
+.execution-arrow {
+    color: yellow;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Code Box */
+.code-box {
+    border: 2px solid #9EC8B9;
+    padding: 20px 2px 20px 20px;
+    background-color: #1B4242;
+    color: #9EC8B9;
+    font-family: monospace;
+    text-align: left;
+    height: 300px;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+/* Individual Code Line Styling */
+.code-line {
+    padding: 2px 5px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+/* Highlight Active Execution Line */
+.code-line.active {
+    background-color: rgba(255, 0, 0, 0.5);
+    border-left: 4px solid red;
+}
+
+/* ARRAY VISUALIZATION */
+.array-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #1B4242;
+    color: #E0F8F5;
+    border: 2px solid #9EC8B9;
+    text-align: center;
+    overflow: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Array Display */
+.array-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Array Bar Styling */
+.array-bar {
+    width: 50px;
+    height: 50px;
+    background-color: #5C8374;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.5s;
+}
+
+/* Highlight Active Search Element */
+.array-bar.active {
+    background-color: red;
+}
+
+/* INPUT FIELDS & BUTTONS */
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* User Input for Custom Array */
+.array-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.array-input input {
+    width: 80px;
+    text-align: center;
+}
+
+/* Button Styling */
+button {
+    background-color: #5C8374;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #9EC8B9;
+    color: #092635;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .visualizer-section {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+    }
+
+    .theory-section, .code-execution, .array-section {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    /* Adjust Divider for Small Screens */
+    .divider {
+        display: block;
+        width: 100%;
+        height: 3px;
+        cursor: ns-resize;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .array-bar {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .execution-box {
+        height: 140px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .searching-container {
+        margin-top: 20px;
+        padding: 5px;
+    }
+
+    .searching-container h2 {
+        font-size: 24px;
+    }
+
+    .theory-section, .code-execution, .array-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .array-bar {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .execution-box {
+        height: 120px;
+    }
+
+    input, select, button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .array-input input {
+        width: 60px;
+    }
+
+    .theory-section h3 {
+        font-size: 20px;
+    }
+
+    .theory-section p {
+        font-size: 14px;
+    }
+
+    .code-box {
+        height: 200px;
+    }
+}
