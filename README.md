@@ -2,6 +2,8 @@
 
 DSA Visualizer is an interactive platform designed to help users understand and visualize various data structures and algorithms. It provides step-by-step execution, real-time comparisons, and detailed insights into algorithm behavior, making learning more engaging and effective.
 
+project is deplopyed on netlify and here is the link.
+
 ## 🚀 Live Deployment
 [DSA Visualizer](https://dsavisualisers.netlify.app/)
 
