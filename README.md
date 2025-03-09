@@ -54,7 +54,7 @@ The primary goal of this project is to create an intuitive and interactive platf
 ## 📦 Installation & Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/dsa-visualizer.git
+   git clone https://github.com/sakshi04-ui/DSA_Visualizer.git
    cd dsa-visualizer
    ```
 2. Install dependencies:
