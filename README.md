@@ -44,6 +44,9 @@ The primary goal of this project is to create an intuitive and interactive platf
 ├── 📁 assets/                 # Images, animations, styles
 ├── 📁 styles/                 # CSS/SCSS for styling
 │   ├── global.css
+│   ├── Header.css
+│   ├── Home.css
+│   ├── RaceMode.css
 ├── 📄 App.js                  # Main application entry point
 ├── 📄 index.js                # React DOM rendering
 ├── 📄 package.json            # Dependencies & scripts
