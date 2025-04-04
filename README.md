@@ -5,7 +5,7 @@ DSA Visualizer is an interactive platform designed to help users understand and 
 project is deplopyed on netlify and here is the link.
 
 ## 🚀 Live Deployment
-[DSA Visualizer](https://dsavisualisers.netlify.app/)
+[DSA Visualizer](https://dsa-visulaizers.netlify.app/)
 
 ## 🎯 Project Goal
 The primary goal of this project is to create an intuitive and interactive platform that simplifies complex algorithms through visual representation. This helps students, educators, and professionals understand DSA concepts with ease.
