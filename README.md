@@ -8,7 +8,7 @@ project is deplopyed on netlify and here is the link.
 [DSA Visualizer](https://dsa-visulaizers.netlify.app/)
 
 ## 🎯 Project Goal
-The primary goal of this project is to create an intuitive and interactive platform that simplifies complex algorithms through visual representation. This helps students, educators, and professionals understand DSA concepts with ease.
+The primary goal of this project is to create an intuitive and interactive platform that simplifies complex algorithms throu gh visual representation. This helps students, educators, and professionals understand DSA concepts with ease.
 
 ## 🛠 Features
 - **Algorithm Visualization:** Real-time execution of sorting and searching algorithms with animations.
